@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pg模拟器 · 一目了然</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fce9c8 0%, #f7d9b0 40%, #efc48c 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      line-height: 1.7;
+      color: #2e2b28;
+    }
+
+    .card {
+      max-width: 860px;
+      width: 100%;
+      background: #fffaf3;
+      border-radius: 48px 16px 48px 16px;
+      padding: 3rem 2.8rem;
+      box-shadow: 0 20px 40px rgba(140, 90, 40, 0.15), 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.25s ease;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 1.2rem 1rem;
+      }
+      .card {
+        padding: 2rem 1.5rem;
+        border-radius: 32px 12px 32px 12px;
+      }
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #b5651e, #8b4513);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.35rem;
+      line-height: 1.2;
+    }
+
+    .subhead {
+      font-size: 1.05rem;
+      color: #7a6a58;
+      margin-bottom: 2.5rem;
+      border-left: 4px solid #d9a066;
+      padding-left: 1.2rem;
+      font-weight: 420;
+    }
+
+    .intro-paragraph {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      background: #fcf6ed;
+      padding: 1.2rem 1.6rem;
+      border-radius: 24px 8px 24px 8px;
+      border: 1px solid #f0dcc6;
+    }
+
+    p {
+      margin-bottom: 1.6rem;
+    }
+
+    .article-body p:last-of-type {
+      margin-bottom: 1.8rem;
+    }
+
+    .highlight-box {
+      background: #f5ede3;
+      padding: 1.4rem 1.8rem;
+      border-radius: 28px 8px 28px 8px;
+      margin: 2rem 0 2.2rem 0;
+      border-left: 6px solid #c9894b;
+      color: #3d3229;
+    }
+
+    .highlight-box strong {
+      color: #8b5a2b;
+    }
+
+    .cta-sentence {
+      font-size: 1.2rem;
+      font-weight: 480;
+      background: #fff3e7;
+      padding: 1rem 1.8rem;
+      border-radius: 60px 12px 60px 12px;
+      display: inline-block;
+      border: 1px solid #eccdb0;
+      margin-top: 0.8rem;
+    }
+
+    a {
+      color: #b05f1b;
+      text-decoration: none;
+      font-weight: 550;
+      padding: 0.1em 0.4em;
+      border-radius: 40px;
+      background: rgba(210, 140, 70, 0.08);
+      transition: background 0.2s, color 0.2s;
+      border-bottom: 2px solid transparent;
+    }
+
+    a:hover {
+      background: rgba(210, 140, 70, 0.2);
+      color: #854513;
+      border-bottom-color: #c9813a;
+    }
+
+    .faq-mini {
+      margin-top: 2.8rem;
+      border-top: 2px dashed #e5d3be;
+      padding-top: 1.8rem;
+    }
+
+    .faq-mini dt {
+      font-weight: 600;
+      color: #5c4637;
+      margin: 1.2rem 0 0.3rem 0;
+      font-size: 1.05rem;
+    }
+
+    .faq-mini dd {
+      margin-left: 0.2rem;
+      color: #4f4136;
+      padding-left: 0.8rem;
+      border-left: 2px solid #dbb694;
+    }
+
+    .closing-note {
+      margin-top: 2.8rem;
+      font-style: italic;
+      color: #6d5d4b;
+      text-align: right;
+      border-top: 1px solid #e7d4bf;
+      padding-top: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .closing-note span {
+      background: #f1e5d7;
+      padding: 0.1rem 0.8rem;
+      border-radius: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="card">
+  <h1>pg模拟器 · 一个目的</h1>
+  <div class="subhead">不绕弯子，从名字看本质</div>
+
+  <div class="intro-paragraph">
+    <strong>如果你第一次看到“pg模拟器”</strong>，可能好奇它到底是什么、用来干什么。其实答案就在名称里——它是一类模拟运行环境，专门适配与 pg 相关的交互场景。不需要安装复杂依赖，也无需理解底层协议，打开网页就能体验。
+  </div>
+
+  <div class="article-body">
+    <p>
+      很多人第一次接触 <a href="https://portal-m-pg.com">pg模拟器</a> 时，最关心的是“我能直接用它吗？” 答案是肯定的。页面设计时已经考虑到了不同经验层次的用户：哪怕你只懂基本的浏览器操作，也能在几分钟内理解它的核心用途。它更像一个轻量级适配层，让你绕过繁琐的配置步骤。
+    </p>
+    <p>
+      从实际使用场景来看，这类模拟器往往承担两个作用：一是提供接近真实环境的反馈，帮助用户验证想法；二是降低试错成本，不必在完整的系统中来回切换。当你需要快速确认某个逻辑或流程是否可行，一个专注的模拟工具往往比完整环境更高效。
+    </p>
+    <p>
+      当然，任何模拟器都有其边界。它不会承诺“百分百还原”，也无意替代正式部署。它的价值在于让你在正式投入资源之前，先用最轻的方式走一遍预设路径。这也正是 <a href="https://portal-m-pg.com">pg模拟器</a> 一直保持简洁的原因——只做最核心的模拟，不堆砌无关功能。
+    </p>
+  </div>
+
+  <div class="highlight-box">
+    <strong>💡 一个提示</strong><br>
+    初次使用时，建议先浏览界面上已有的默认参数或示例选项。很多模拟器都会内置一组典型配置，方便你直接感受它的响应方式。不需要一开始就全部自定义，先跑通一次，再逐步调整。
+  </div>
+
+  <div class="cta-sentence">
+    🧭 立即通过 <a href="https://portal-m-pg.com">pg模拟器</a> 验证你的想法。
+  </div>
+
+  <div class="faq-mini">
+    <dl>
+      <dt>❓ 模拟器需要注册吗？</dt>
+      <dd>不需要。基于浏览器的设计意味着打开即用，所有操作都在当前页面完成，无账户系统。</dd>
+
+      <dt>❓ 模拟结果可靠吗？</dt>
+      <dd>可靠但有限——它模拟的是典型路径，不含极端异常或网络波动。适合功能验证与流程体验。</dd>
+
+      <dt>❓ 对设备有要求吗？</dt>
+      <dd>现代浏览器即可，桌面端体验更佳。移动端也能正常运行，但建议横屏使用。</dd>
+    </dl>
+  </div>
+
+  <div class="closing-note">
+    <span>认识工具最快的方式，就是直接用它一次。</span>
+  </div>
+</div>
+</body>
+</html>
